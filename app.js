@@ -1,4 +1,8 @@
-const express = require("express");
+
+
+// Add your instrumentation key or use the APPLICATIONINSIGHTSKEY environment variable on your production machine to start collecting data.
+var ai = require('applicationinsights');
+ai.setup(process.env.APPLICATIONINSIGHTSKEY || 'your_instrumentation_key').start();const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const expressSession = require("express-session");
