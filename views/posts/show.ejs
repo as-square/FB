@@ -28,8 +28,8 @@
     <% }) %>
     <form action="/post/<%=post._id%>/comments/new" method="POST">
         <div class="form-group row">
-            <label for="CommentContent" class="col-form-label col-sm-2" >New Comment</label>
-            <input type="text" name="content" class="form-control" id="CommentContent" style="width: 500px;" autocomplete="off">
+            <label for="CommentContent" class="col-form-label col-sm-2" >New Comment</label requiered>
+            <input type="text" name="content" class="form-control" id="CommentContent" style="width: 500px;" autocomplete="off" required>
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     </form>
